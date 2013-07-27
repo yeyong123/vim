@@ -1,0 +1,35 @@
+#encoding:utf-8
+<div class="zhanshi">
+</div>
+<div class="bs-docs-example">
+	<div id="accordion2" class="accordion">
+	<% Category.all.each_with_index do |category, index| %>
+		<div class="accordion-group">
+			<div class="accordion-heading">
+			
+				<a class="accordion-toggle" href="#collapse<%= index %>" data-parent="#accordion2" data-toggle="collapse">
+						<%=  category.name %>
+				</a>
+					</div>
+					<div id="collapse<%= index %>" class="accordion-body collapse" style="height: 0px;">
+						<div class="accordion-inner">
+                     <% category.tags.each do |tag| %>
+											 <li><%= link_to tag.name, products_path(t:tag) %></li>
+										 <% end %>	      
+						</div>
+						
+					</div>
+								
+				</div>	
+				<% end %>												
+			</div>
+			
+		</div>
+<div class="products">
+	<%= render partial: 'products/list', locals: { products: @products} %>
+	<%= will_paginate @product %>
+	</div>
+	
+	<div style="clear:both">
+		<%= link_to '发布新产品', new_product_path %>
+	</div>

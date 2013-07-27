@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Robt</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="/">ROBT</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li><%= link_to "首页", products_path %></li>
+						<li><%= link_to "所有产品",products_path%></li>
+						<li><%= link_to "社区", '#' %></li>
+						<li><%= link_to "关于我们" %></li>
+					</ul>
+					<ul class="nav pull-right">
+						<form action="/search" class="navbar-search pull-left" method="get">
+		          <input type="text" name="q" class="search-query span3" value="" placeholder="搜索" />
+		        </form>
+						
+							<li><%= link_to '注册','#' %></li> 
+							<li style="margin-left: -25px; font-size: 14px"><%= link_to '| 登录', '#' %></li>
+							<!--				<li><%= link_to 'git 登录','/auth/github' %></li> -->
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<%= yield %>
+<!-- 新加的 -->
+
+<!-- 到这里 -->
+</body>
+</html>

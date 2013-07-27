@@ -1,0 +1,10 @@
+<% products.each do |product| %>
+	<div class="product">
+		<ul class="pic">
+			<%= link_to image_tag(product.cover_image), product %>
+			<p>	<%= link_to product.title, product %></p>
+			<p><%= product.number %></p>
+		</ul>
+	</div>
+<% end %>
+			
