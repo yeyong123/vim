@@ -1,0 +1,20 @@
+<%= render 'carts/list_cart' %>
+<h1 style="margin-top: 10px">Listing products</h1>
+
+<p>
+<%= l Time.now,:format => :long  %>
+</p>
+<% Category.all.each_with_index do |cate, index| %>
+	<%= link_to cate.name, home_path(cate.id) %>
+	<% cate.tags.each do |tag| %>
+		<%= link_to tag.name, category_path(tag.id) %>
+		<% tag.lists.each do |list| %>
+			<%= link_to list.name, products_path(t:list) %>
+		<% end %>
+	<% end %>
+<% end %>
+<%= render partial: 'products/list', locals: {products: @products} %>
+<%= will_paginate @products %>
+
+<%= link_to 'New Product', new_product_path %>
+

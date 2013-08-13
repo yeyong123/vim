@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+
+<!-- Load the Cloud Zoom CSS file -->
+<link href="cloud-zoom.css" rel="stylesheet" type="text/css" />
+
+<!-- You can load the jQuery library from the Google Content Network.
+Probably better than from your own server. -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<script type="text/JavaScript" src="cloud-zoom.1.0.2.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>展示功能</title></head>
+    <body>
+ <div style="text-align:left;">	
+        <a href='images/bigimage00.jpg' class = 'cloud-zoom' id='zoom1'
+            rel="adjustX: 10, adjustY:-4">
+            <img src="images/smallimage.jpg" alt='' title="Main title of image 1" />
+        </a>
+        
+        <a href='images/bigimage00.jpg' class='cloud-zoom-gallery'
+        	rel="useZoom: 'zoom1', smallImage: 'images/smallimage.jpg' ">
+        <img src="images/tinyimage.jpg" alt = "" title="Main title of image 1"/></a>
+        
+        <a href='images/bigimage01.jpg' class='cloud-zoom-gallery' title='Thumbnail 2'
+        	rel="useZoom: 'zoom1', smallImage: ' images/smallimage-1.jpg'">
+        <img src="images/tinyimage-1.jpg" alt = "" title="Main title of image 2"/></a>                  
+        
+        <a href='images/bigimage02.jpg' class='cloud-zoom-gallery' title='Thumbnail 3'
+        	rel="useZoom: 'zoom1', smallImage: 'images/smallimage-2.jpg' ">
+        <img src="images/tinyimage-2.jpg" alt = "" title="Main title of image 3"/></a>
+ 
+    </div>
+       
+</body>
+</html>

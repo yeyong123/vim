@@ -1,0 +1,51 @@
+#encoding:utf-8
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yehkevin</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+	<div class="gp-log">
+		<%= link_to t('.myaccout'), orders_path(@order) %>
+		<div class="user-login">
+			<% if current_user %>
+			<% if user_signed_in? %>
+			<%= link_to current_user.email, member_path %>|
+				<%= link_to "注销",destroy_user_session_path, method: :delete %>
+				<%= link_to "修改密码", edit_registration_path(:user) %>
+				<% end %>
+			<% else %>
+				<%= link_to "注册", new_registration_path(:user) %> | 
+				<%= link_to "登录", new_session_path(:user) %>
+			<% end %>
+		</div>
+		<%= request.url %><br />
+		<%= current_page?(request.url) %>
+		<%= "#{request.fullpath}" %>
+				</div>
+		<div class="header">
+			<ul class="nav">
+				<li><%= link_to t('.home'), home_path %></li>
+				<li><%= link_to t('.products'), products_path  %></li>
+				<li><%= link_to t('.customer'), customers_path %></li>
+				<li><%= link_to t('.about'), abouts_path %></li>
+				<li><%= link_to t('.new'), companies_path %></li>
+				<li><%= link_to t('.contact'), contact_path %></li>
+				<li>	<form action="/search" method="get">
+					<input type="text" name="q" value="" placeholder="输入产品" />
+				</form></li>
+			</ul>
+		</div>
+		<div class="keyword">
+			<%= t('.keyword') %>:<a href="#">高空作业平台</a><a href="#">高空作业平台</a><a href="#">高空作业平台</a><a href="#">高空作业平台</a>
+		</div>
+		</header>
+
+<%= yield %>
+
+</body>
+</html>

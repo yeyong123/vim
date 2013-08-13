@@ -1,0 +1,88 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.cart-show {
+	float: right;
+	margin: 25px 18px 0 0;
+	width: 95px;
+	padding: auto;
+	background: #e8e8e8;
+	border-radius: 8px;
+}	
+.cart-show span{
+	letter-spacing: 2px;
+}
+.cart-show a:hover {
+	background: none;
+	color: black;
+	font-style: bold
+}
+.cart-show a:first-child {
+	padding-left: 3px;
+	font-style: bold;
+}
+//首页的代码
+.index-image {
+	float: left;
+	margin: 3px 0 5px 5px;
+	height: 300px;
+	border: 1px solid;
+	border-radius: 10px;
+	width: 810px;
+	background: #e8e8e8;
+}
+.index_show_product {
+	clear: both;
+	height: 200px;
+	border: 1px solid;
+	border-radius: 5px;
+	background: #e8e8e8;
+}
+.index_show_product img {
+	margin: 10px 5px;
+	height: 180px;
+	width: 230px;
+}
+.index_desc {
+	margin-top: 5px;
+	border: 1px solid;
+	height: 260px;
+}
+.right-desc {
+	float: left;
+	border: 1px solid;
+	border-radius: 4px;
+	height: 250px;
+	width: 310px;
+	margin: 0 10px 0 2px;
+}
+.right-desc:first-child {
+	margin-left: 8px;
+}
+.right-desc h3 {
+	padding: 5px;
+	float: left;
+	width: 310px;
+}
+
+.right-desc img {
+	width: 150px;
+	margin: 2px;
+	padding: 0px;
+	height: 130px;
+	float: left;
+	border: 1px solid;
+}
+.right-desc p {
+	float: left;
+	margin: 0;
+	padding: 0;
+	word-wrap:break-word;
+}
+.right-desc a {
+	text-decoration: none;
+}
+.right-desc a:hover {
+	background: none;
+	color: black;
+}

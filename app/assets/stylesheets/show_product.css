@@ -1,0 +1,120 @@
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,font{
+	padding: 0px;
+	margin: 0px;
+}
+.p-data {
+	margin:0 0 10px 0px;
+}
+.data-gallery {
+	margin: 0px;
+	width: 400px;
+	float: left;
+	position:relative;
+	z-index:0;
+}
+.data-pic {
+	height: 400px;
+	width: 400px;
+	border:1px solid #DCD9DA;
+}
+.data-pic img {
+	border: 2px solid black;
+	width:400px;
+}
+.thumbsPanel{
+	height: 85px;
+	margin:10px 0;
+	overflow: hidden;
+}
+.thumbsPanel .prev,.thumbsPanel .next{
+	margin-top: 10px;
+	float: left;
+	width: 15px;
+	height: 50px;
+}
+.thumbsPanel .prev{
+	background: url(../assets/sprite.gif) no-repeat;
+	background-position: 0px -317px;
+}
+.thumbsPanel .prev:hover{
+	background-position: -32px -317px;
+}
+.thumbsPanel .prev.disabled,.thumbsPanel .prev.disabled:hover{
+	background-position: -16px -317px;
+}
+.thumbsPanel .next{
+	background: url(../assets/sprite.gif) no-repeat;
+	background-position: -80px -317px;
+}
+.thumbsPanel .next:hover{
+	background-position: -48px -317px;
+}
+.thumbsPanel .next.disabled,.thumbsPanel .next.disabled:hover{
+	background-position: -64px -317px;
+}
+.thumbsItems {
+	height: 85px;
+	white-space: nowrap;
+	position: relative;
+	float: left;
+	width:350px;
+	margin:0 1px;
+	overflow: hidden;
+	display: inline;
+}
+.thumbsList{
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 85px;
+}
+.thumbsList li {
+	float: left;
+	height: 80px;
+	width: 80px;
+	margin:0 5px;
+	background: #FCFCFC;
+	overflow: hidden;
+	display: inline;
+	position: relative;
+}
+
+.thumbsItems img {
+	height:76px;
+	width:76px;
+	padding:1px;
+	border:1px solid #ddd;
+}
+/* 商品图片放大镜样式 start */
+.list img{ 
+	border:1px solid #d5d5d5; 
+	margin-right:5px;
+}
+.list img.on{
+	border:1px solid #ff6600;
+}
+.izImage2{
+	border:0;
+	width:400px; 
+	height:400px; 
+}
+.izViewer2{
+	width:300px;
+	height:300px;
+	position:absolute;
+	left:420px;
+	top:0px;
+	display:none; 
+	border:1px solid #e4e4e4;
+	z-index:9999;
+}
+.handle2{
+	display:none;
+	opacity:0.3;
+	filter:alpha(opacity=-10);
+	background:#8b7b33; 
+	cursor:crosshair; 
+	border:1px solid #d5d5d5; 
+	position:absolute;
+}
+/* 商品图片放大镜样式 end */

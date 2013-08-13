@@ -1,0 +1,92 @@
+	<nav class="nav-drop">
+		<h3>分类导航</h3>
+			 <ul>
+				 <li>
+				 <% Category.all.each do |cate| %>
+					 <%=link_to  cate.name, category_path(cate.id) %>
+				 
+				 <ul>
+					 <% cate.tags.each do |tag| %> 
+						 <li><%= link_to tag.name, category_path(tag.id) %><br />
+						 <% tag.lists.each do |list| %>
+							 <%= link_to list.name, products_path(t:list) %>
+						 <% end %>
+					 <% end %>
+				 <% end %>
+							 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a> <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+
+					 </li>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+
+				 </ul>
+				 </li>
+				 <li>
+				 <a href="#">搬运设备</a>
+				 <ul>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+
+				 </ul>
+				 </li>
+				 <li>
+				 <a href="#">搬运设备</a>
+				 <ul>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+
+				 </ul>
+				 </li>
+				 <li>
+				 <a href="#">搬运设备</a>
+				 <ul>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+
+				 </ul>
+				 </li>
+				 <li>
+				 <a href="#">搬运设备</a>
+				 <ul>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+					 <li><a href="#">油桶搬运设备</a><br />
+					 <a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a><a href="#">油桶夹</a>
+					 </li>
+
+				 </ul>
+				 </li>
+
+
+			 </ul>
+		</nav>	
+

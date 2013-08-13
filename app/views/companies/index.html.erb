@@ -1,0 +1,6 @@
+<h1>Listing companies</h1>
+<%= render partial: 'companies/company_list', locals: {companies: @companies} %>
+<%= will_paginate @companies %>
+<br />
+
+<%= link_to 'New Company', new_company_path %>

@@ -1,0 +1,9 @@
+#encoding:utf-8
+<div class="cart_title">cart</div>
+<table class="table">
+	<%= render(cart.line_items) %>
+</table>
+<%= button_to '清空', cart, method: :delete, confirm: '确定删除?',class: "btn btn-warning format" %>
+<%= button_to '提交',new_order_path, method: :get, class: "btn format" %>
+
+

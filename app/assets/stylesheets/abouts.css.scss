@@ -1,0 +1,48 @@
+// Place all the styles related to the abouts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.about-index  {
+	border-bottom: 1px solid;
+	height: 150px;
+}
+.about-index p:last-child, .about-index img {
+	float: left;
+}
+.about-index p {
+	margin: 0;
+	padding: 0;
+}
+.about-index p:last-child {
+	width: 300px;
+	word-wrap:break-word;
+	margin-left: 200px;
+}
+.about-index p:first-child,.about-index img {
+	margin-left: 20px;
+}
+.about-index p:first-child {
+	font-size: 14pt;
+	font-style: bold;
+}
+.about-list {
+	width: 150px;
+	float: left;
+	border: 1px solid;
+	margin-right: 10px;
+}
+.about-list ul {
+	list-style: none;
+}
+.about-list ul li:last-child {
+	border-style: none;
+}
+.about-list ul li {
+	border-bottom: 1px solid;
+	text-align: center;
+	padding: 10px 0 10px 0;
+	
+}
+
+.about-right {
+	float: left;
+}

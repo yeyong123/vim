@@ -1,0 +1,63 @@
+.header ul {
+	list-style: none;
+}
+.header li {
+	float: left;
+	border-right: 1px solid;
+	padding-top: 10px;
+	letter-spacing: 2px;
+	width: 100px;
+	height: 30px;
+	text-align: center
+}
+.header li:first-child {
+	border-radius: 10px 0 0 10px;
+}
+.header li a {
+	font-size: 10pt;
+	font-style: bold;
+	text-decoration: none;
+}
+.header li:last-child {
+	border-style: none;
+}
+.header li:last-child:hover {
+	background: none;
+}
+.header li:hover {
+	background: white;
+}
+.header li a:hover {
+	background: none;
+	color: blue;
+}
+.header input {
+	margin-left: 20px;
+	height: 25px;
+	width: 280px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #909090;
+}
+.header form {
+	margin-top: -5px;
+}
+.keyword {
+	margin-top: 3px;
+	border-radius: 5px;
+	background: #e8e8e8;
+	height: 20px;
+	padding-left: 580px;
+}
+.keyword a {
+	text-decoration: none;
+	font-size: 9pt;
+	padding-left: 3px;
+}
+.keyword a:hover {
+	background: none;
+	color: blue;
+}
+//最上面的logo的地方的代码
+.user-login{
+	float: right;
+}

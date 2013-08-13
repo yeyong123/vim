@@ -1,0 +1,11 @@
+"zh-CN":
+  devise:
+    confirmations:
+      confrimred: "你的账户已经成功创建，你可以现在登录"
+      send_instructions: "你会收到一封电子邮件，指示有关如何在几分钟之内确认您的帐户。"
+      send_paranoid_instructions: "如果您的电子邮件地址存在在我们的资料库中，你会收到一封电子邮件，指示有关如何在几分钟之内确认您的帐户。"
+    failure: 
+      already_authenticated: "你已经登录"
+      inactive: "你的帐户还没有启动"
+      invalid: "无效的邮箱或密码"
+      invalid_token: "无效的认证"

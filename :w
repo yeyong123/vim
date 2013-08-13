@@ -1,0 +1,43 @@
+<!-- 首页界面 -->
+<aside>
+<div class="nav-list">
+	<%= render "products/nav_list" %>
+</div>
+<div class="index-image">
+	dasd
+</div>
+<div class="index_show_product">
+	<img src="assets/4.jpg" />
+	<img src="assets/4.jpg" />
+	<img src="assets/4.jpg" />
+	<img src="assets/4.jpg" />
+</div>
+<div class="index_desc">
+	<div class="right-desc">
+	<h3>关于我们</h3>
+		<% About.limit(1).each do |about| %>
+			<p>	<%= link_to image_tag(about.image_url), about %>
+			<%= truncate(strip_tags(about.content),:length => 180) %></p>
+		<% end %>
+		</div>	
+		<div class="right-desc">
+			<h3>公司最新动态</h3>
+			<%= render partial: 'companies/company_list', locals: {companies: companies} %>
+	</div>
+<div class="right-desc">
+		dsa
+	</div>
+
+</div>
+</aside>
+<div style="clear: both">
+<% @products.each do |product| %>
+	<%= image_tag(product.pictures.first.image_url(:normal)) %>
+	<%= product.title %>
+	<%= product.number %>
+	<%= button_to t('.addcart'), line_items_path(product_id: product), class: "btn btn-info" %>
+<% end %>
+<%= render 'carts/list_cart' %>
+</div>
+<!-- 首页界面 -->
+

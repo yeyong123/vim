@@ -1,0 +1,27 @@
+"zh-CN":
+  layouts:
+    application:
+      home: "首页"
+      products: "产品中心"
+      customer: "客户中心"
+      about: "关于我们"
+      new: "公司动态"
+      contact: "联系我们"
+      keyword: "热门关键字"
+      cart: "购物车"
+      myaccout: "个人中心"
+
+  products:
+    show:
+      edit: "编辑"    
+      recommend: "推荐产品"
+      descript: "产品描述"
+      detail: "规格细节"
+      video: "视频展示"
+      service: "售后服务"
+      addcart: "加入购物车"
+
+  home:
+    index:
+      addcart: "加入购物车"
+  

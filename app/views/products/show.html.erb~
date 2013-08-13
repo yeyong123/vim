@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @product.title %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @product.number %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @product.content %>
+</p>
+
+<p>
+  <b>picture:</b>
+	<% @product.pictures.each do |pic| %>
+		<%= image_tag(pic.image_url(:small_thumb)) %>
+	<% end %>
+</p>
+
+<%= image_tag(@product.pictures.first.image_url(:thumb)) %>
+<p>
+<%= image_tag(@product.pictures.last.image_url) %>
+</p>
+<%= link_to 'shanchu', product_path, method: :delete, data: {confirm: "Are you sure"} %>
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+
+<!-- 产品展示页面 -->
+<div class="show_image">
+ <div class="image" id="bigpics" title=""><img src="<%= @product.pictures.first.image_url %>" /></div>
+    <div class="switch">
+    	<div class="icon1"><a href="#" title="上一个" onfocus="this.blur();">上一个</a></div>
+        <div class="switch_center" id="pics">
+        	<ul>
+        	<% @product.pictures.each do |photo| %>
+        	 			<li><a href="#"><img src="<%= photo.image_url %>" /></a></li>
+                <% end %>
+            </ul>
+      </div>
+        <div class="icon2"><a href="#" title="下一个" onfocus="this.blur();">下一个</a></div>
+        <div class="clear"></div>
+    </div>
+   </div> 
+   <!-- 到这里结束 -->

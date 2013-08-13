@@ -1,0 +1,11 @@
+<% @abouts.each do |about| %>
+	<div class="about-index">
+		<p>	<%= link_to about.title, about %></p>
+	<%= image_tag(about.image_url(:small_thumb)) %>
+	<p><%= truncate(strip_tags(about.content),:length => 180) %></p>
+</div>
+<% end %>
+
+
+<br />
+

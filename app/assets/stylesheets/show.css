@@ -1,0 +1,100 @@
+body {
+	margin: auto;
+	width: 980px;
+}
+.gp-log {
+	margin: 5px 0 5px 0;
+	height: 50px;
+	border: 1px solid black;
+}
+.header {
+	margin-top: 5px;
+	height: 40px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background: #e8e8e8;
+}
+.bananer {
+	height: 22px;
+	background: #909090;
+	border: 1px solid;
+	margin-top: 5px;
+}
+.list {
+	width: 600px;
+	float: left;
+}
+.nav-drop {
+	margin-top: 5px;
+	float: left;
+}
+.title-product {
+	height: 30px;
+	margin: 3px;
+}
+.picture-product {
+	background: #e8e8e8;
+	margin: 5px 5px 3px 3px;
+	border: 1px solid;
+	width: 405px;
+	height: 495px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #909090;
+	float: left;
+}
+.desc-product {
+	width: 180px;
+	margin-top: 5px; 
+	float: left;
+	border: 1px solid;
+	height: 400px;
+	background: #e8e8e8;
+}
+.right-product {
+	margin: 5px 0 0 3px;
+	width: 200px;
+	float: left;
+	border: 1px solid;
+	height: 600px;
+	border-radius: 5px;
+}
+.right-product h3 {
+	text-align: center;
+	line-height: 200%;
+	border-radius: 5px;
+	background: yellow;
+}
+.right-product img {
+	margin: 5px;
+	border-radius: 5px;
+}
+.recommend {
+	margin: 5px 0 5px 4px;
+	border: 1px solid;
+	width: 190px;
+	height: 230px;
+	border-radius: 5px;
+	box-shadow: 0px 4px 2px #909090;
+}
+.recommend a:hover {
+	background: none;
+}
+.recommend b{
+ padding-left: 10px;
+} 
+.content-product {
+	margin-left: 3px;
+	width: 590px;
+	clear: both;
+	height: auto;
+	float: left;
+	margin-bottom: 10px;
+}
+footer {
+	clear: both;
+	border-top: 2px solid;
+	height: 300px;
+	border-bottom: 1px solid;
+	margin: 10px 0 10px 0;
+}
+
