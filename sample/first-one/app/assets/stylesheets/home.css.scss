@@ -1,0 +1,51 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'bootstrap';
+.index-nav {
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(30%, #9f7925), color-stop(10%, #aa8430));
+
+}
+.layout-basic {
+	width: 980px;
+	margin: auto;
+}
+.index-nav ul {
+	height: 40px;
+	list-style: none;
+}
+.index-nav ul li {
+	float: left;
+	margin: 10px 30px 0 10px;
+}
+.index-nav ul li:last-child {
+	margin-top: 5px;
+}
+.index-nav ul li button {
+	margin-top: -10px;
+}
+//用户登录
+.user-signin {
+	width: 260px;
+}
+//大图轮播
+.banner { 
+	position: relative; 
+	overflow: auto; 
+}
+.banner li { 
+	height: 406px;
+	list-style: none; 
+}
+.banner ul {
+	margin: 0;
+	padding: 0;
+}
+.banner ul li { 
+	float: left;
+ }
+ .banner .inner {
+	 padding: 250px 0 110px 180px;
+	 text-align: center;
+	 color: white;
+ }
